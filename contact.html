@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact Unforgettable Adventures, get directions or meet the river guides">
+    <meta name="author" content="Robert Rosskopf">
+
+
+    <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Oooh  Baby Font -->
+
+    <title>Contact Us - Unforgettable Adventures - WDD 130</title>
+</head>
+
+<body>
+    <header class="box">
+
+        <img src="images/map-direction-logo.png" alt="Compass Rose" width=60>
+        <div class="title-script">Unforgetable Adventures</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class='letterhead'>
+            <h3> Unforgettable Adventures</h3>
+            <p>123 N Main St.</p>
+            <p>Kanab, Utah 84741</p>
+            <p>+1 801 555 2732</p>
+            <p>info@unforgettableadventures.com</p>
+
+
+        </div>
+
+        <div class="two-column-layout">
+            <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.0841265873282!2d-112.53116525914298!3d37.05547837229113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8734d426c420455d%3A0x8e720b96ad6a901b!2s117%20N%20Main%20St%2C%20Kanab%2C%20UT%2084741!5e0!3m2!1sen!2sus!4v1781182267624!5m2!1sen!2sus"
+              width="400" height="300" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <form class="custom-form">
+
+                <label for="q1" id="box-1">Name:</label>
+                <input type="text" id="q1" name="q1">
+
+
+                <label for="q2" id="box-3">Email:</label>
+                <input type="text" id="q2" name="q2">
+
+
+                <label id="box-5" class="fix-width">Message Purpose</label>
+
+                <div class="radio-group" id="box-6">
+                    <input type="radio" name="message_type" id="input1">
+                    <label for="input1" class="fix-width">General Inquiry</label>
+                    <input type="radio" name="message_type" id="input2">
+                    <label for="input2" class="fix-width">Reservation Question</label>
+                    <input type="radio" name="message_type" id="input3">
+                    <label for="input3" class="fix-width">Website Suggestion</label>
+
+                </div>
+                <label for="message" id="box-7">Message</label>
+                <textarea id="message" name="message">
+
+                </textarea>
+                <input type="checkbox" id="box-9" name="subscribe">
+                <label for="box-9" id="box-10">Please subscribe me to the monthly
+                    newsletter!</label>
+
+                <button type="submit" id="box-11">Send message</button>
+            </form>
+
+        </div>
+        <div class="personnel">
+            <h1 id="personnel-1">We are here to serve you!</h1>
+            <img src="images/dave.webp" id="personnel-2" alt="Dave out in the wild">
+            <label id="personnel-2a">Dave has been a river guide for 12 years, and is an expert in
+                wilderness survival.</label>
+            <img src="images/jeff.webp" id="personnel-3" alt="Jeff relaxing with a hot chocolate">
+            <label id="personnel-3a">Jeff has been a river guide for 4 years, provides our safety
+                training.</label>
+            <img src="images/sue.webp" id="personnel-4" alt="Sue kayaking down the river">
+            <label id="personnel-4a">Sue has been a river guide for 2 years, and knows how to turn
+                dehydrated food into a real meal.</label>
+        </div>
+    </main>
+
+    <footer class="box">
+
+        <p>&copy;2026 Unforgettable Adventures &bull; Robert Rosskopf &bull; Utah, United
+            States of America</p>
+        <nav class="socialmedia">
+
+            <!-- Add font awesome icons
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a> -->
+            <a href="http://www.facebook.com"><img src="images/logo-facebook-icon.png"
+                  alt="Go to Facebook"></a>
+            <a href="http://www.linkedin.com"><img src="images/linkedin-social-icon.png"
+                  alt="Go to LinkIn"></a>
+            <a href="http://www.twitter.com"><img src="images/twitter-bird-icon.png"
+                  alt="Go to Twitter"></a>
+
+        </nav>
+    </footer>
+</body>
+
+</html>
