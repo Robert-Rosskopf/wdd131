@@ -4,63 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="White Water Rafting trips, Moab Utah">
+    <meta name="description" content="Robert Rosskopf, Web Page Designer - WWD131 - Dynamic Web Fundamentals - Web Design, Basics of web design">
     <meta name="author" content="Robert Rosskopf">
 
 
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- Oooh  Baby Font -->
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    
 
-    <title>Main Content - WDD 130</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Robert Rosskopf</title>
 </head>
 
 <body>
     <header class="box">
-
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         
-        <div class="title-script">Main Content</div>
+        
         <nav>
             <ul class="menu">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="http://www.linkedin.com/in/robert-rosskopf-b98007b/" >LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=p45#p45">Favorite Scripture</a></li>
+                <li><a>Final Project</a></li>
             </ul>
 
         </nav>
     </header>
     <main>
-        <div >
-            
-
-
-            <h1 class="title-script wide-banner">Main Heading</h1>
-
+        <div class="title">
+        
+            <h1 >Robert Rosskopf</h1>
+        
         </div>
 
         <div class='main-left-aside-right'>
-            <div>Main</div>
-            <div>Aside</div>
+            <section class="card">
+                <div class="text-box">
+                    <p><div class="framed float-right">
+                    <img src="images/profile.jpg" alt="Image of Robert Rosskopf" width="100" height="100">
+                    </div>I am the product of many miracles.  A miracle is when God interferes 
+                    with the natural course of human events. I have seen it happen time and 
+                    time again.  My entry into programming as a profession was a miracle.  The 
+                    spirit whispered to me that I should become a programmer.  I discovered 
+                    that I had a natural talent for programming.  I bought a popular programming 
+                    language, and a computer, and challenged myself to write difficult programs.
+                    After completing a few, I used the Yellow Pages to call programmers and offer
+                    my services.  I was hired by a man who eventually sold me to a company where 
+                    he was a consultant.  I found the act of creation to be very satisfying.</p>
+                </div>
+                <div class="finished-projects">
+                    <div class="fp-title">Finished Projects</div>
+                    <div class="fp-heading1">Organization</div>
+                    <div class="fp-heading2">Project Goal</div>
+                    <div class="fp-heading3">Technologies</div>
+                    <div class="fp-row1-col1">EZ Storage</div>     
+                    <div class="fp-row1-col2">Create a full management system for renting lockers.</div>              
+                    <div class="fp-row1-col3">Clipper</div>
+                    <div class="fp-row2-col1">EZ Storage</div>
+                    <div class="fp-row2-col2">Create a management system for renting trucks.</div>
+                    <div class="fp-row2-col3">Clipper</div>
+                    <div class="fp-row3-col1">Rug Doctor</div>
+                    <div class="fp-row3-col2">Improve and maintain the Licensee software.</div>
+                    <div class="fp-row3-col3">MS Access, Visual Basic for Applications, Excel</div>
+                    <div class="fp-row4-col1">Capital One Auto Finance</div>
+                    <div class="fp-row4-col2">Create a system that automatically faxes promotions to dealerships.</div>
+                    <div class="fp-row4-col3">MS Access, Visual Basic for Applications, Excel</div>
+                    <div class="fp-row5-col1">University of North Texas</div>
+                    <div class="fp-row5-col2">Develop a system to combine and track the grants reported by the various colleges.</div>
+                    <div class="fp-row5-col3">MS Access, Visual Basic for Applications, Excel</div>
+                    <div class="fp-row6-col1">Blackstone</div>
+                    <div class="fp-row6-col2">Develop SQL Server Reports.</div>
+                    <div class="fp-row6-col3">SQL Server, VB.Net, Visual Studio</div>
+                </div>
+  
+            </section>
+            <section class="card">
+                <div  class="bio">Biography</div>
+                <div class="text-box">
+                    <p>I was born in Santa Monica, California.  My father was a life guard and met my mother on the beach.  
+                       They both converted to the restored gospel, and moved to Salt Lake City, Utah, taking me in tow.  Our 
+                       family was inactive when we moved back to California.  My own conversion came after the move, when 
+                       I read the Book of Mormon, and prayed about it.  All of the books at the local public library were 
+                       critical of the LDS church, The Book of Mormon, and Joseph Smith as a prophet.  As I read some of 
+                       these books, it became clear to me that they had nothing to offer in the way of truth.  Since then 
+                       I have made a study of the thousands of theories and complaints against the church and its beliefs.
+                       I have recorded some of my own insights at <a href="https://www.thedewfromheaven.com">www.thedewfromheaven.com</a></p>
+                    <p> My other interests include woodworking, singing, sailing and performance magic.</p>
+                </div>
+            </section>
         </div>
 
     </main>
 
     <footer class="box">
 
-        <p>&copy;2026 company name &bull; Robert Rosskopf &bull; Utah, United
-            States of America</p>
+        <p>
+            <span>&copy; </span><span id="year"> </span> &bull;  <span> Robert Rosskopf &bull;</span> <span>Utah, United States of America</span> 
+        </p>
+        <span>Last Modified:</span><span id="last-mod"> </span>
         <nav class="socialmedia">
 
             <!-- Add font awesome icons
             <a href="https://www.facebook.com" class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
             <a href="https://www.instagram.com" class="fa fa-instagram"></a> -->
+            <!--
             <a href="http://www.facebook.com"><img src="images/logo-facebook-icon.png"
                   alt="Go to Facebook"></a>
             <a href="http://www.linkedin.com"><img src="images/linkedin-social-icon.png"
                   alt="Go to LinkIn"></a>
             <a href="http://www.twitter.com"><img src="images/twitter-bird-icon.png"
                   alt="Go to Twitter"></a>
+            -->
 
         </nav>
     </footer>
