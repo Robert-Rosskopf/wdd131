@@ -44,17 +44,7 @@ footer {
     width: 100%;
     z-index: 1;
 }
-.dropped-title {
-    position: absolute;
-    top: -2;
-    left: -2;
-    transform: translate(-50%, -50%);
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #999;    font-family: var(--heading-font);
-    text-align: center;
-    z-index: 0;
-}
+
 .main-left-aside-right {
     display: grid;
     justify-content: center;
