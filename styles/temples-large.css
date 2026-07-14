@@ -1,35 +1,7 @@
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 main {
     background-color: #f3e3f3;
 }
-
-h2 {
-	font-size: 1.2rem;
-	color: navy;
-	text-align: left;
-	margin: 1rem;
-}
-
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "❌";
-}
-
-
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
-}
-
 
 
 
