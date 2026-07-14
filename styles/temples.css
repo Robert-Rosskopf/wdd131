@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #000;
-    --secondary-color: #de493c;
+    --primary-color: #fff;
+    --secondary-color: #f1bfe5;
     --accent1-color: #3e5c9e;
     --accent2-color: #daefd9;
     --heading-font: "Roboto", "Georgia", sans-serif;
@@ -39,10 +39,13 @@ figure {
 }
 
 h1 {
+	display: inline-block;
 	text-align: left;
 	font-family: var(--heading-font);
 	font-size: 1.5rem;
-	margin-left: 1rem;
+	
+	padding: .6rem;
+
 }
 
 h2 {
@@ -52,11 +55,10 @@ h2 {
 	text-align: left;
 	margin: 1rem;
 }
+.turn-invisible {
+    display: none;
+}	
 
-nav {
-	max-width: 700px;
-	margin: 1rem auto;
-}
 
 /* small view navigation */
 #menu {
@@ -64,10 +66,12 @@ nav {
     font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: #000000;
+	
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 8px;
+	right: 16px;
+	z-index: 1000;
 }
 
 #menu::before {
@@ -77,46 +81,90 @@ nav {
 #menu.open::before {
 	content: "❌";
 }
-
+nav {
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
 .navigation {
 	display: flex;
+	position:relative;
+	top: 100%;
+	width:100%;
 	flex-direction: column;
+	/* flex: 1; */
 	justify-content: space-around;
 	list-style: none;
 	background-color: #333;
-	color: #fff;
+	color: var(--secondary-color);
+	
 }
-
+.navigation li {
+    flex: 1 0 auto;
+	
+}
 .navigation a {
 	display: none;
-	padding: 1rem;
+	width: 100%;
+	padding: 1rem; 
 	text-align: center;
+	font-family: var(--heading-font);
+	font-size: 1.5rem;
 	text-decoration: none;
-	color: #fff;
+	background-color: var(--secondary-color);
+	color: black;
+	border-width: 2px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid	 #000000;
 }
 .navigation a:hover {
-	background-color: #bbb;
+	background-color: #c299bb;
 	color: #333;
 	font-weight: 700;
 }
 .navigation li a.active {
     color: #fff;
-    background-color: #456792;
+    background-color: #bd83b3;
 
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
+	width: 100%;
 }
 
+.button-3d {
+    padding: 10px 20px;
+    background: #e0e0e0;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #555;
+    border-right: 3px solid #555;
+    transition: all 0.1s ease-in-out;
+}
 
-.stuff {
+.button-3d:hover {
+    background: #f0f0f0;
+}
+
+.button-3d:active {
+    border-top: 3px solid #555;
+    border-left: 3px solid #555;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    background: #d0d0d0;
+}
+.box {
 	margin: 0.5rem;
 	border: 1px solid rgb(0  0  0 / 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
+	background-color: #fff;
+	max-width: 100%;
+	
 }
 
 
