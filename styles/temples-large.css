@@ -24,23 +24,11 @@ main {
     background-color: #f3e3f3;
 }
 
-h1 {
-	text-align: left;
-	font-family: var(--heading-font);
-	font-size: 1.5rem;
-	margin-left: 1rem;
-}
-
 h2 {
 	font-size: 1.2rem;
 	color: navy;
 	text-align: left;
 	margin: 1rem;
-}
-
-nav {
-	max-width: 700px;
-	margin: 1rem auto;
 }
 
 
@@ -80,11 +68,13 @@ nav {
 
 	.navigation {
 		flex-direction: row;
+		display: flex;
+		flex: 1;
 	}
 
 	.navigation a {
 		display: block;
-		flex: 1 1 100%;
+		/* flex: 1 1 100%; */
 	}
 
 	.stuff {
