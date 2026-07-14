@@ -3,7 +3,7 @@
     --secondary-color: #de493c;
     --accent1-color: #3e5c9e;
     --accent2-color: #daefd9;
-    --heading-font: "Nunito Sans", "Georgia", sans-serif;
+    --heading-font: "Roboto", "Georgia", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 figure {
@@ -30,13 +30,7 @@ figure {
     display: block;
     
 }
-.nunito-sans-font> {
-  font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
- 
-}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -116,9 +110,6 @@ nav {
 	display: block;
 }
 
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
 
 .stuff {
 	margin: 0.5rem;
