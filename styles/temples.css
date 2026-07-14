@@ -143,8 +143,8 @@ nav {
     background: #e0e0e0;
     border-top: 3px solid #fff;
     border-left: 3px solid #fff;
-    border-bottom: 3px solid #555;
-    border-right: 3px solid #555;
+    border-bottom: 3px solid #666;
+    border-right: 3px solid #666555;
     transition: all 0.1s ease-in-out;
 }
 
