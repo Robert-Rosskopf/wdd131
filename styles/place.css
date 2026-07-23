@@ -1,7 +1,13 @@
+root {
+    --primary-color: #025015;
+    --secondary-color: #dbf8d8;
+    --accent-color: #05c234;
+    --font-family: "Shadows Into Light Two", helvetica, sans-serif;
+}   
 body {
-	font-family: "Shadows Into Light Two", helvetica, sans-serif;
-	color: #025015;
-    background-color: #dbf8d8;
+	font-family: var(--font-family);
+	color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Shadows Into Light Two", helvetica, sans-serif;
@@ -14,7 +20,7 @@ header {
   font-family: "Knewave", system-ui;
   font-weight: 200;
   font-style: normal;
-  color: #05c234;
+  color: var(--accent-color);
 }
 .shadows-into-light-two-regular {
   font-family: "Shadows Into Light Two", cursive;
