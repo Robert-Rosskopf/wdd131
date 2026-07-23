@@ -6,6 +6,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Shadows Into Light Two", helvetica, sans-serif;
 }
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
 .knewave-regular {
   font-family: "Knewave", system-ui;
   font-weight: 200;
@@ -100,49 +104,56 @@ footer {
 }
 @media (min-width: 900px) {
   .hero {
-    position: relative;
-  }
+        position: relative;
+    }
 
-  .data {
-    position: absolute;
-    top: 80px;          /* adjust as needed */
-    left: 10%;
-    transform: translateX(-10%);
-    background: rgba(0, 0, 0, 0.4); /* translucent overlay */
-    padding: 1rem;
-    border-radius: 14px;
-    color: white;
-    z-index: 10;
-    grid-template-columns: 1fr 130px 130px 1fr;
-  }
+    .data {
+        position: absolute;
+        top: 80px;          /* adjust as needed */
+        left: 10%;
+        transform: translateX(-10%);
+        background: rgba(0, 0, 0, 0.4); /* translucent overlay */
+        padding: 1rem;
+        border-radius: 14px;
+        color: white;
+        z-index: 10;
+        grid-template-columns: 1fr 130px 130px 1fr;
+    }
   .weather {
-    position: absolute;
-    bottom: 60px;          /* adjust as needed */
-    left: 90%;
-    transform: translateX(-82%);
-    background: rgba(0, 0, 0, 0.4); /* translucent overlay */
-    padding: 1rem;
-    border-radius: 14px;
-    color: white;
-    z-index: 10;
+        position: absolute;
+        bottom: 60px;          /* adjust as needed */
+        left: 90%;
+        transform: translateX(-82%);
+        background: rgba(0, 0, 0, 0.4); /* translucent overlay */
+        padding: 1rem;
+        border-radius: 14px;
+        color: white;
+        z-index: 10;
    
-    grid-template-columns: 1fr 100px 100px 1fr;
-  }
-  .weather h2::after {
-    content: url("../images/bright-sunny.svg");
-    display: inline-block;
-    margin: 0.5rem auto;
-}
+        grid-template-columns: 1fr 100px 100px 1fr;
+    }
+    .weather h2::after {
+        content: url("../images/bright-sunny.svg");
+        display: inline-block;
+        margin: 0.5rem auto;
+    }
 
-.weather[data-condition="cloudy"] h2::after {
-    content: url("../images/cloudy.svg");
-    display: inline-block;
-    font-size: 40px;
-}
+    .weather[data-condition="cloudy"] h2::after {
+        content: url("../images/cloudy.svg");
+        display: inline-block;
+        font-size: 40px;
+    }
 
-.weather[data-condition="rain"] h2::after {
-    content: url("../images/drizzle.svg");
-    display: inline-block;
-    font-size: 40px;
+    .weather[data-condition="rain"] h2::after {
+        content: url("../images/drizzle.svg");
+        display: inline-block;
+        font-size: 40px;
+    }
 }
+.box {
+    display:block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    justify-content: center;
 }
