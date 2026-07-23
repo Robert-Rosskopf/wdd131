@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5 Overview</title>
+        <meta name="description" content="Baja California">
+        <meta name="author" content="Robert Rosskopf">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="shadows-into-light-two-regular">Baja California, Mexico</h1>
+        </header>
+        <main>
+            <div class="hero">
+                <picture class="container">
+                    <source srcset="images/hero-large.webp" media="(min-width: 1500px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+                    <img src="images/hero-small.webp" alt="Hero Image">
+                </picture>
+                <div class="data">
+                    <h2>Data</h2>
+                    <span class="column1">Area:</span>
+                    <span class="column2">27,587 sq. miles</span>
+                    <span class="column1">Population:</span>
+                    <span class="column2">3,769,020</span>
+                    <span class="column1">Capital:</span>
+                    <span class="column2">Mexicali</span>
+                    <span class="column1">Language:</span>
+                    <span class="column2">Spanish</span>
+                    <span class="column1">Currency:</span>
+                    <span class="column2">Mexican Peso</span>   
+                    <span class="column1">Time Zone:</span>
+                    <span class="column2">UTC-7(Pacific Daylight Time)</span>
+                    <span class="column1">Calling Code:</span>
+                    <span class="column2">+52</span>
+                </div>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <!-- <img src="images/bright-sunny.svg" alt="Weather Image" width:"50" height="50">  -->
+                    <span class="column1">Temperature:</span>
+                    <span class="column2" id="temp"> </span>
+                    <span class="column1">Humidity:</span>
+                    <span class="column2" id="humidity"> </span>
+                    <span class="column1">Wind Speed:</span>
+                    <span class="column2" id="wind"> </span>
+                    <span class="column1">Waves:</span>
+                    <span class="column2" id="waves"> </span>
+                    <span class="column1">Windchill:</span>
+                    <span class="column2" id="windchill"> </span>
+                    
+
+                </div>
+                
+
+            </div>
+        </main>
+    </body>
+    <footer class="box">
+        <p>
+            <span>&copy; </span><span id="year"> </span> &bull;  <span> Robert Rosskopf &bull;</span> <span>Texas, United States of America</span> 
+        </p>
+        <p>
+            <span>Last Modified:</span><span id="last-mod"> </span>
+        </p>
+    </footer>
+</html>
